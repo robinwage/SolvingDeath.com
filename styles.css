@@ -1,0 +1,116 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen background */
+body {
+    background: url('bg.png') no-repeat center center fixed; /* Full-screen background */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the page fills the screen */
+    text-align: center;
+    margin: 0;
+}
+
+/* Main container for centering content */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Logo container */
+.logo-container {
+    margin-bottom: 20px; /* Adjusted for more space */
+}
+
+/* Styling for the SD logo */
+.sd-logo {
+    width: 150px; /* Adjust size */
+    height: auto;
+}
+
+/* Title and message styling */
+.text-container h1 {
+    font-size: 4rem; /* Larger font for modern impact */
+    font-weight: 700; /* Bold for more prominence */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-container .under-construction {
+    font-size: 1.6rem; /* Slightly larger text */
+    color: #555;
+    font-style: italic;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #777;
+    font-weight: 300;
+}
+
+/* Responsive Design for Smaller Screens (Phones/Tablets) */
+@media screen and (max-width: 768px) {
+    /* Decrease logo size for smaller screens */
+    .sd-logo {
+        width: 120px;
+    }
+
+    /* Adjust the text size for mobile devices */
+    .text-container h1 {
+        font-size: 3rem;
+    }
+
+    .text-container .under-construction {
+        font-size: 1.4rem;
+    }
+
+    /* Reduce padding in the main container */
+    .main-container {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further decrease logo size on very small screens */
+    .sd-logo {
+        width: 100px;
+    }
+
+    /* Adjust heading and text size for very small screens */
+    .text-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-container .under-construction {
+        font-size: 1.3rem;
+    }
+
+    /* Further reduce padding and margins for very small screens */
+    .main-container {
+        padding: 10px;
+    }
+
+    .footer {
+        font-size: 0.9rem; /* Smaller footer text */
+        margin-top: 30px;
+    }
+}
